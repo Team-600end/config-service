@@ -8,8 +8,20 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Team-600end/batton-msa-config.git
           default-label: master
+          uri: git@github.com:Team-600end/batton-msa-config.git
+          ignore-local-ssh-settings: true
+          private-key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
+            1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQSCGgGVrsnLFl1bjAS8sWL6Gt8jBdL5
+            YkbSZEV9IYeqsrn9EA5ku/EbJ5r0EIIFf9hh4PLpF/Li0DNAsUymxU08AAAAsOwIWmrsCF
+            pqAAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIIaAZWuycsWXVuM
+            BLyxYvoa3yMF0vliRtJkRX0hh6qyuf0QDmS78RsnmvQQggV/2GHg8ukX8uLQM0CxTKbFTT
+            wAAAAhAI1t4pYaB0Uu80cEDp1CTgulW+0DPTH1oxSOf8xbZJBwAAAAE2xzaDkyOTUwMEBn
+            bWFpbC5jb20BAgME
+            -----END OPENSSH PRIVATE KEY-----
+          timeout: 4
 
 management:
   endpoints:
